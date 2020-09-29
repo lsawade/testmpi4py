@@ -16,7 +16,7 @@ The installation of `mpi4py` requires an `MPI` compiler, so we have to load
 
 ```bash
 module load openmpi/gcc
-MPICC=$(which mpicc) pip install --no-cache-dir mpi4py
+MPICC=$(which mpicc) pip install --no-cache-dir mpi4py --no-binary all
 ```
 
 No cache dir is making sure that no old version is installed.
